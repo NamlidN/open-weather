@@ -40,7 +40,7 @@ let NewTempp;
 function as(event) {
     console.log(1);
     if (event.type == "keydown") {
-console.log(2);
+        console.log(2);
         if (event.keyCode == 13) {
             console.log(3);
             event.preventDefault();
@@ -54,7 +54,7 @@ console.log(2);
 
 function asdf(event) {
     event.preventDefault();
-    oke()
+    oke();
     stadt = document.getElementById('txt').value;
 
 
@@ -101,7 +101,7 @@ function asdf(event) {
             w.innerHTML = data.weather[0].description;
             temp.innerHTML = NewTempp + 'C°';
             time.innerHTML = formattedTime;
-            wind.innerHTML = data.wind.speed + 'm/s' + '--' + data.wind.deg+'deg??';
+            wind.innerHTML = data.wind.speed + 'm/s' + '--' + data.wind.deg + 'deg??';
             cloud.innerHTML = data.clouds.all + '%';
             press.innerHTML = data.main.pressure + 'hpa';
             hum.innerHTML = data.main.humidity + '%';
@@ -110,28 +110,28 @@ function asdf(event) {
             geo.innerHTML = '[' + data.coord.lat + '//-' + data.coord.lon + ']';
 
 
-        
+
         });
 
 }
 
-function oke(){
-    let AaA = document.getElementById('waw')
-    AaA.classList.add('z')
-    AaA.classList.remove('one')
-    let fofo = document.getElementById('fofo')
-    fofo.style.display = 'none'
-  let dsd = document.getElementById('pp')
-  dsd.classList.remove('pp')
-dsd.classList.add('jhgf')
+function oke() {
+    let AaA = document.getElementById('waw');
+    AaA.classList.add('z');
+    AaA.classList.remove('one');
+    let fofo = document.getElementById('fofo');
+    fofo.style.display = 'none';
+    let dsd = document.getElementById('pp');
+    dsd.classList.remove('pp');
+    dsd.classList.add('jhgf');
 }
-function back(){
-    let AaA = document.getElementById('waw')
-    AaA.classList.remove('z')
-    AaA.classList.add('one')
-    let fofo = document.getElementById('fofo')
-    fofo.style.display = 'block'
-  let dsd = document.getElementById('pp')
-  dsd.classList.add('pp')
-dsd.classList.remove('jhgf')
+function back() {
+    let AaA = document.getElementById('waw');
+    AaA.classList.remove('z');
+    AaA.classList.add('one');
+    let fofo = document.getElementById('fofo');
+    fofo.style.display = 'flex';
+    let dsd = document.getElementById('pp');
+    dsd.classList.add('pp');
+    dsd.classList.remove('jhgf');
 }
